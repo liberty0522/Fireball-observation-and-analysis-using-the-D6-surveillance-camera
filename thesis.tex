@@ -1,0 +1,91 @@
+\documentclass[12pt]{report}
+\usepackage{WUthesis}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb} 
+\usepackage{graphicx}
+\usepackage{notoccite} % Prevents refs in Table of Cont, List of Figs, etc. from starting refs counter.
+
+
+
+\begin{document}
+
+\title{Fireball Observation and Analysis using the D6 Surveillance Camera}
+\author{Gary Locker}
+\thesissupervisor{Dr. Jed Rembold}
+
+\maketitle
+
+
+\newpage
+
+\begin{center}
+\textbf{Presentations and publications:}
+\end{center}
+
+List all the posters or oral presentations you have given in physics. Examples are your ATEP thesis proposal talk, your senior progress report in the Fall, SSRD in the Spring, and the combined poster symposium with Linfield at the end of the spring semester.
+
+The format should be 
+
+\begin{itemize}
+    \item author, \textit{title}, type of presentation, location, date. 
+\end{itemize}
+
+For example,
+\begin{itemize}
+\item M. Kleinert, J. Kleinert, \textit{Should we get another dog?}, oral presentation, Willamette University, Summer 2019
+\end{itemize}
+
+\newpage
+
+\begin{acknowledgments}
+By the end of the spring semester, when you turn in your completed thesis for grading, you must have the official acknowledgments listed. Those include mostly funding sources (ask your advisor for help). 
+
+In addition, students often like to add personal thanks to family, friends, or professors. You may add those after you have received your grade and before you upload your final thesis to the academic commons. This is \textit{your} acknowledgment, so you may write whatever you want. Just keep in mind that this thesis is available to other students and faculty. 
+\end{acknowledgments}
+
+\newpage
+
+\begin{abstract}
+    \begin{general}
+        You'll work on two different abstracts: A technical abstract, similar to abstracts you may have seen in publications, and an abstract for a general audience (imagine you want to explain your thesis work to your non-physics friend or family members). You'll work with your advisor on both abstracts over the course of the spring semester.
+    \end{general}
+    
+    \begin{technical}
+        Your technical abstract can go here.
+    \end{technical}
+\end{abstract}
+
+\newpage
+
+
+\tableofcontents
+\listoftables % Remove if you don't have any tables.
+\listoffigures
+
+% Make separate .tex files for each chapter, e.g. introduction.tex, apparatus.tex, etc. That'll make trouble shooting a whole lot easier!
+\newpage
+
+\input{Outline}
+
+\newpage
+
+\input{introduction}
+
+\newpage
+
+\input{Background.tex}
+
+
+%Chapter 2: 
+%\include{Analysis}
+
+%\bibliographystyle{urcsbiblio}
+\bibliographystyle{ieeetr}
+\bibliography{thesisbib}
+
+\appendix
+%\include{notebook}
+
+\end{document}
